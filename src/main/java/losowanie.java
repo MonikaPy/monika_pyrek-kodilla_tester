@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.Random; //co to
 
 public class losowanie {
     public int getCountOfRandomNumber(int max) {
