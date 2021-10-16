@@ -13,6 +13,10 @@ public class Grades {
             this.grades [this.size] =value;
             this.size++;
         }
+       public int getLastGrade(grades [size])
+        System.out.println(getLastGrade);
+
+
         public static void main(String[] args) {
             double [] grades = {2,4,5,3,4,2,1,6,5,4};
             double sum= 0.0;
