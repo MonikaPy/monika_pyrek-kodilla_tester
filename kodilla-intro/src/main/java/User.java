@@ -3,8 +3,8 @@ public class User {
     private int age;
 
     public User(String name, int age) {
-    this.age=age;
-    this.name=name;
+        this.age=age;
+        this.name=name;
     }
 
     public void main(String[] args) {
@@ -15,15 +15,16 @@ public class User {
         User daniel = new User("Daniel", 27);
         User iza = new User("Iza", 46);
 
-        User[] users= {jan,hanna,piotr,ola,daniel,iza};
-        public void checkAge (){
-        double sum= 0.0;
-        int quantity= users.length;
-        for (int i = 0; i < users.length; i++) {
-            sum += users [this.age];
+        User[] users = {jan, hanna, piotr, ola, daniel, iza};
+        public void checkAge () {
+            double sum = 0.0;
+            int quantity = users.length;
+            for (int i = 0; i < users.length; i++) {
+                sum += users[this.age];
+            }
+            double averageAge = sum / quantity;
+            if (this.age < averageAge) {
+                System.out.println(this.name);
+            }
         }
-        double averageAge= sum/quantity;
-        if (this.age<averageAge) {
-        System.out.println(this.name);
     }
-}
