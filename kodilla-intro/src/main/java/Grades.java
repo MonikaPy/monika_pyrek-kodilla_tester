@@ -1,17 +1,17 @@
 public class Grades {
     private int [] grades;
-    private int size;                             //zmienne
+    private int size;
 
-    public Grades () {                           //obiekt typu Grades-konstruktor
-        this.grades= new int [10];               //this.grades-zmienna przechowujaca oceny,nowa wartosc-tablica ma 10 wartości
-        this.size= 0;                            // this.size- zmienna monitorująca aktualna liczbe elementow tablicy
+    public Grades () {
+        this.grades= new int [10];
+        this.size= 0;
     }
-    public void add (int value) {                //metoda dodająca przekazaną w argumencie ocenę do tablicy; value- liczba która ma zostać wstawiona do tablicy
-        if (this.size ==10){                     //size==10- tablica ma rozmiar 10 i nie można dodać nic co przekracza ten rozmiar
-            return;                              //return w metodzie void przerywa działanie
+    public void add (int value) {
+        if (this.size ==10){
+            return;
         }
-        this.grades [this.size] =value;          //dodanie elementu do tablicy jeśli rozmiar jest mniejszy od 10(czyli od max)
-        this.size++;                             //zwiększamy liczbę elementów tablicy
+        this.grades [this.size] =value;
+        this.size++;
     }
 
     public double average () {
