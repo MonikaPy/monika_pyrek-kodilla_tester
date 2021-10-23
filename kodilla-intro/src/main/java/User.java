@@ -7,7 +7,7 @@ public class User {
         this.name = name;
     }
 
-    public static void checkAge(User[] users) {          //metoda checkAge powinna być w klasie User? Wtedy można ją wywołać na obiekcie tzn. w pętli trzeba pobrać z tablicy każdego Usera i na nim wywołać metodę
+    public static void checkAge(User[] users) {
         double sum = 0.0;
         int quantity = users.length;
         for (int i = 0; i < users.length; i++) {
