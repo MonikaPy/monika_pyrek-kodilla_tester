@@ -1,4 +1,5 @@
 package com.kodilla.abstracts;
+
 public abstract class Animal {
 
     private int numberOfLegs;
@@ -10,5 +11,6 @@ public abstract class Animal {
     public int getNumberOfLegs() {
         return numberOfLegs;
     }
+
     public abstract void giveVoice();
 }

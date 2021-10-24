@@ -1,14 +1,11 @@
-//package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework;
 
-//public class Square extends Shape {
-//private double bokA;
-//public Square (double bokA){
-//    this.bokA=bokA;
-//}
-//@Override
-//    public double pole()
-//{
-//    return bokA*bokA;
-//}
-//}
+public class Square extends Shape {
+    public Square (double a){
+        super.bokA=a;
 
+    }
+    double obliczPole(){
+        return super.bokA*super.bokA;
+    }
+}

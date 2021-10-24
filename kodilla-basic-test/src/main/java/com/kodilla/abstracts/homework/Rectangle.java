@@ -1,6 +1,12 @@
-//package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework;
 
-//public class Rectangle extends Shape {
-//
-//}
+public class Rectangle extends Shape {
+    public Rectangle (double a, double b){
+        super.bokA=a;
+        super.bokB=b;
+    }
+double obliczPole(){
+        return super.bokA*super.bokB;
+}
+}
 

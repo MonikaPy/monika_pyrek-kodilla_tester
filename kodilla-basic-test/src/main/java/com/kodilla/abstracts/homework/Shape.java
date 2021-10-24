@@ -1,12 +1,9 @@
-//package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework;
 
-//public abstract class Shape {
-//    public abstract void surfaceArea() {
-//
-//    }
-//
-//    public abstract void perimeter() {
-//
-//    }
-//}
+public abstract class Shape {
+        double bokA;
+        double bokB;
+
+
+}
 
