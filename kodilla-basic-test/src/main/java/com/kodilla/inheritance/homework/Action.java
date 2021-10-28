@@ -1,8 +1,8 @@
-//package com.kodilla.inheritance.homework;
-//public class Action {
-//    public static void main(String[] args) {
-//        System system = new System();
-//        system.turnOn();
-//
-//    }
-//}
+package com.kodilla.inheritance.homework;
+public class Action {
+    public static void main(String[] args) {
+        OperatingSystem system = new OperatingSystem(2014);
+        system.turnOn();
+
+    }
+}

@@ -1,11 +1,12 @@
 package com.kodilla.abstracts.homework;
 
 public class Square extends Shape {
+    double bokA;
     public Square (double a){
-        super.bokA=a;
+        bokA=a;
 
     }
-    double obliczPole(){
-        return super.bokA*super.bokA;
+    public double obliczPole(){
+        return bokA*bokA;
     }
 }

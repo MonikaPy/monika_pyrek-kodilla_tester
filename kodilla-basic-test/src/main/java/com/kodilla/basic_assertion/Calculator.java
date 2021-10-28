@@ -8,7 +8,13 @@ public class Calculator {
     public int subtract(int a, int b) {
         return a - b;
     }
-    public int exponentiation(int a) {
-        return a ^ 2;
+
+    public double square(double a){
+        return a * a;
+    }
+
+    public double delta(double expected, double actual) {
+        double delta =  expected - actual ;
+        return delta;
     }
 }
