@@ -13,7 +13,7 @@ public class CashMachine {
 
 
     public void add(int value) {
-        if (value < 0 && Math.abs(value) > balances()) { // przerywa dodanie jeśli wypłata większa od salda
+        if (value < 0 && Math.abs(value) > balances()) {
             return;
         }
         this.size++;
@@ -25,7 +25,7 @@ public class CashMachine {
     }
 
 
-    public int balances() { // saldo sumuje wplaty i wypłaty
+    public int balances() {
         if (this.values.length == 0) {
             return 0;
         }
@@ -36,17 +36,17 @@ public class CashMachine {
         return sum;
     }
 
-    public int sumNumberOfDeposits() { // zlicza ilość wPłaty
-        int counter = 0; // przechowuje ilość  wpłat
+    public int sumNumberOfDeposits() {
+        int counter = 0;
         for (int i = 0; i < this.values.length; i++) {
             if (this.values[i] > 0) {
-                counter++; // po pętli obrocie pętli dodaje 1
+                counter++;
             }
         }
         return counter;
     }
 
-    public int sumNumberOfCredits() { // Zlicza ilość wYpłat
+    public int sumNumberOfCredits() {
         int counter = 0;
         for (int i = 0; i < this.values.length; i++) {
             if (this.values[i] < 0) {
@@ -56,11 +56,11 @@ public class CashMachine {
         return counter;
     }
 
-    public int getNumberOfExecutedTransactions() { // ilość wszystkich transakcji
+    public int getNumberOfExecutedTransactions() {
         return size;
     }
 
-    public int sumOfDeposits() { //zlicza wartość wPłat
+    public int sumOfDeposits() {
         int counter = 0;
         for (int i = 0; i < this.values.length; i++) {
             if (this.values[i] > 0) {
@@ -72,7 +72,7 @@ public class CashMachine {
 
     public int sumOfCredits() {
         int counter = 0;
-        for (int i = 0; i < this.values.length; i++) { //zlicza wartość wypłat
+        for (int i = 0; i < this.values.length; i++) {
             if (this.values[i] < 0) {
                 counter += this.values[i];
             }
