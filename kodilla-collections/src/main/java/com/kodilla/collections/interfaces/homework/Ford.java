@@ -13,7 +13,7 @@ public class Ford implements Car{
     }
 
     @Override
-    public int increaseSpeed() {
+    public void increaseSpeed() {
         Random random= new Random();
         speed+= random.nextInt(30);
         return speed;
