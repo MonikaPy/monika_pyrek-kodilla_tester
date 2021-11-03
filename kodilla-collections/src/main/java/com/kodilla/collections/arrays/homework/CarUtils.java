@@ -10,7 +10,8 @@ public class CarUtils {
         System.out.println("-----------------------------");
         System.out.println("Car type: " + getCarType(car));
         System.out.println("Speed: " + car.getSpeed());
-        System.out.println("Increase speed: " + car.increaseSpeed());
+        car.increaseSpeed();
+        System.out.println("Increase speed: " + car.getSpeed());
     }
 
     private static String getCarType(Car car) {

@@ -18,7 +18,7 @@ public class Opel implements Car{
     public void increaseSpeed() {
         Random random = new Random();
         speed+=  random.nextInt(40);;
-        return speed;
+
     }
 
     @Override

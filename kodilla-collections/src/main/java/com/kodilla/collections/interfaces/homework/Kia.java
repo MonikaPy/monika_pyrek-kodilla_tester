@@ -18,7 +18,7 @@ public class Kia implements Car{
     public void increaseSpeed() {
         Random random = new Random();
         speed+=  random.nextInt(10);;
-        return speed;
+
     }
 
     @Override

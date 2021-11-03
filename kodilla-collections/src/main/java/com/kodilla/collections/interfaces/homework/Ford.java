@@ -16,7 +16,7 @@ public class Ford implements Car{
     public void increaseSpeed() {
         Random random= new Random();
         speed+= random.nextInt(30);
-        return speed;
+
 
     }
 

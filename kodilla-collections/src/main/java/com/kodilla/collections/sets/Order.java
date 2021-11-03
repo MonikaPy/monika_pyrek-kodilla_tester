@@ -31,7 +31,7 @@ public class Order {
             return false;
         Order order = (Order) o;
         return Double.compare(order.quantity, quantity) == 0
-                && Double.compare(order.orderNumber, orderNumber) == 0
+                && order.orderNumber.equals(orderNumber)
                 && this.productName.equals(order.productName);
     }
 

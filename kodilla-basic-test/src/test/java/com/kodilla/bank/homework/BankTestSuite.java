@@ -140,7 +140,7 @@ public class BankTestSuite {
         two.add(-400);
         tree.add(100);
         tree.add(-120);
-        assertEquals(-200, bank.averageCredit(), 0.01);
+        assertEquals(-300, bank.averageCredit(), 0.01);
 
     }
 }

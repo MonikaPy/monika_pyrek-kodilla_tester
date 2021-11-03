@@ -22,8 +22,6 @@ public class CarsApplication {
         Random random = new Random();
         int drawnCarKind = random.nextInt(3);
         int a = random.nextInt(200) ;
-        int b = random.nextInt() * 100 + 11;
-        int c = random.nextInt() * 100 + 11;
         if (drawnCarKind == 0)
             return new Ford(a);
         else if (drawnCarKind == 1)

@@ -61,23 +61,29 @@ public class Bank {
     public int averageDeposit() {
         if (this.cashMachines.length == 0)
             return 0;
-
+int count=0;
         int sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
             sum += this.cashMachines[i].sumOfDeposits();
+            if (this.cashMachines[i].sumOfDeposits()>0){
+                count++;
+            }
         }
-        return sum/this.cashMachines.length;
+        return sum/count;
     }
 
     public int averageCredit() {
         if (this.cashMachines.length == 0)
             return 0;
-
+int count=0;
         int sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
             sum += this.cashMachines[i].sumOfCredits();
+            if (this.cashMachines[i].sumOfCredits()<0){
+                count++;
+            }
         }
-        return sum/this.cashMachines.length;
+        return sum/count;
     }
 
 }
