@@ -14,18 +14,15 @@ public class School {
             this.school.add(student);
     }
 
-    public String getName() {
-        return name;
-    }
     public int getSum() {
-        double sum = 0;
+        int sum = 0;
         for (int student : school)
             sum += student;
-        return (int) sum; //czemu tu int w () podpowiada
+        return sum;
     }
 
     @Override
     public String toString() {
-        return "Liczba uczniów w szkole: "+ school.toString();
+        return "Liczba uczniów w szkole "+ name + " wynosi: "+ getSum();
     }
 }

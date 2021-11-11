@@ -22,9 +22,9 @@ public class SchoolDirectory {
         schoolPricipal.put(Izabella, liceum);
         schoolPricipal.put(Tomasz, technikum);
 
-        for (Map.Entry<Principal, School> principalSchoolEntry : schoolPricipal.entrySet())
-            System.out.println(principalSchoolEntry.getKey().getFirstname() + ", jest dyrektorem  " +
-                    principalSchoolEntry.getValue().getName() +", szkoła ta ma " + principalSchoolEntry.getValue().getSum()+" uczniów" );
+        for (Map.Entry<Principal, School> entry: schoolPricipal.entrySet()){
+            System.out.println(entry.getKey()+" "+ entry.getValue());
+        }
     }
 
 
