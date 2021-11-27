@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import java.util.HashSet;
 import java.util.Set;
 
-public class GamblingMachineTestSuit { // test
+public class GamblingMachineTestSuit {
     public GamblingMachine gamblingMachine = new GamblingMachine();
 
     @ParameterizedTest
