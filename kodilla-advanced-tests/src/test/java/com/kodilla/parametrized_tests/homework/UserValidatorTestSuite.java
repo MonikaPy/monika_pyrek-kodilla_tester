@@ -23,7 +23,7 @@ class UserValidatorTestSuite {
 
     @ParameterizedTest
     @EmptySource
-    public void shouldValidateUsernameFalseIfStringIsEmpty(String userName) {
+    public void shouldValidateUsernameFalseIfStringIsEmpty(String userName) { // pusty string("")
         assertFalse(userValidator.validateUsername(userName));
     }
 
