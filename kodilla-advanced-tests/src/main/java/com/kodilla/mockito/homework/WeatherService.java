@@ -54,25 +54,3 @@ public class WeatherService {
         }
     }
 }
-    public void removeSubscriberWithoutLocalisation(Client client){
-        Collection<Set<Client>> values = this.clients.values();
-        for (Set<Client> value : values){
-            value.remove(client);
-        }
-
-
-    }
-
-    public void removeLocation(Location location){
-        this.clients.remove(location);
-
-    }
-
-    public void sendNotificationToAll(Notification notification){
-
-    }
-
-    public void sendNotificationToLocation(Notification notification, Location location){
-        this.clients.get(location).forEach(client->client.receive(notification));
-    }
-}
