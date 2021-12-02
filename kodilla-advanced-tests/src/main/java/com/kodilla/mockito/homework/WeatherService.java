@@ -9,7 +9,7 @@ import java.util.*;
 
 public class WeatherService {
 
-    Map<Location>, Set<Client> clients = new HashMap<>();
+    Map<Location, Set<Client>> clients = new HashMap<>();
 
 
     public void addSubscriberToLocalisation(Client client, Location location){
@@ -28,6 +28,32 @@ public class WeatherService {
         }
     }
 
+    public void removeSubscriberWithoutLocalisation(Client client){
+        Collection<Set<Client>> values = this.clients.values();
+        for (Set<Client> value : values){
+            value.remove(client);
+        }
+
+
+    }
+
+    public void removeLocation(Location location){
+        this.clients.remove(location);
+
+    }
+
+    public void sendNotificationToAll(Notification notification){
+        for (Set<Client> clients : clients.values())
+            clients.forEach(client -> client.receive(notification));
+
+    }
+
+    public void sendNotificationToLocation(Notification notification, Location location) {
+        if (this.clients.containsKey(location)) {
+            this.clients.get(location).forEach(client -> client.receive(notification));
+        }
+    }
+}
     public void removeSubscriberWithoutLocalisation(Client client){
         Collection<Set<Client>> values = this.clients.values();
         for (Set<Client> value : values){
