@@ -6,7 +6,7 @@ public class Sedan implements Car{
     @Override
     public boolean hasHeadlightsTurnedOn() {
         LocalTime time = LocalTime.now();
-        if(time.isAfter(LocalTime.of(20, 00)) || time.isBefore(LocalTime.of(6, 00))){
+        if(time.isAfter(LocalTime.of(20, 0)) || time.isBefore(LocalTime.of(6, 0))){
             return true;
         } else return false;
     }

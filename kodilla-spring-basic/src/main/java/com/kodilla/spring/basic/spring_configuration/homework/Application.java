@@ -21,20 +21,5 @@ public class Application {
         }
     }
 
-    @Bean
-    public Car createCar2() {
-        LocalDate date = LocalDate.now();
-        switch (date.getMonthValue()){
-            case 1 :
-            case 2 :
-            case 3 :
-                return new SUV();
-            default:
-                return new Cabrio();
 
-        }
-
-
-
-    }
 }

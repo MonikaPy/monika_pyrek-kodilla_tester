@@ -7,34 +7,25 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.time.LocalTime;
-import java.util.Arrays;
-import java.util.List;
+
 
 @SpringBootTest
 public class ApplicationTestSuite {
 
     @Test
-    public void ShouldLightsTurnedOn(){
-        //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Car car = (Car) context.getBean("createCar");
+public void TestLights(){
+        ApplicationContext context= new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Car car= (Car) context.getBean("createCar");
         LocalTime time = LocalTime.now();
-        boolean lights = car.hasHeadlightsTurnedOn();
         if (time.isAfter(LocalTime.of(20, 0)) || time.isBefore(LocalTime.of(6, 0))){
-            Assertions.assertTrue(lights);
-        }else Assertions.assertFalse(lights);
+            Assertions.assertTrue(car.hasHeadlightsTurnedOn());
+        } else Assertions.assertFalse(car.hasHeadlightsTurnedOn());
     }
-
     @Test
-    public void createCar() {
-        //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Car car = (Car) context.getBean("createCar");
-        //When
-        String type = car.getCarType();
-        //Then
-        List<String> possibleTypes = Arrays.asList("SUV", "Sedan", "Cabrio");
-        Assertions.assertTrue(possibleTypes.contains(type));
+    public void createCar(){
+        ApplicationContext context= new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Car car= (Car) context.getBean("createCar");
+        Assertions.assertTrue(car instanceof Sedan || car instanceof SUV || car instanceof Cabrio);
     }
 
 }
