@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import java.util.HashSet;
 import java.util.Set;
 
-public class GamblingMachineTestSuit {
+public class GamblingMachineTestSuite {
     public GamblingMachine gamblingMachine = new GamblingMachine();
 
     @ParameterizedTest
@@ -27,7 +27,7 @@ public class GamblingMachineTestSuit {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/WrongNumber.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "/WrongNumbers.csv", numLinesToSkip = 1)
     public void shouldReturnExceptionForWrongNumbers(int number1, int number2, int number3, int number4, int number5, int number6) {
         Set<Integer> input = new HashSet<>();
 

@@ -1,6 +1,6 @@
 package com.kodilla.mockito;
 
-import com.sun.nio.sctp.Notification;
+import com.kodilla.notification.Notification;
 
 public interface Client {
     void receive(Notification notification);

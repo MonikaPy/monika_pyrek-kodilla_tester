@@ -1,6 +1,6 @@
 package com.kodilla.mockito;
 
-import com.sun.nio.sctp.Notification;
+import com.kodilla.notification.Notification;
 
 import java.util.ArrayList;
 import java.util.HashSet;
