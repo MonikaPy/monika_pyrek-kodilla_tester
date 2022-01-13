@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 @Snap("WorldTime.png")
 public class WorldTimePage {
-
     private static final String pageUrl = "https://www.worldtimeserver.com/current_time_in_AW.aspx";
 
     private WebDriver webDriver;
