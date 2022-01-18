@@ -8,4 +8,4 @@ Feature: gra
       | liczba | odpowiedz|
     | 3 | "Fizz"   |
     | 5 | "Buzz" |
-    | 3 && 5 | "FizzBuzz" |
+    | 15 | "FizzBuzz" |

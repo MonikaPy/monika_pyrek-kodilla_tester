@@ -25,8 +25,5 @@ public class AllegroTestingAppCss {
         WebElement inputField = driver.findElement(By.cssSelector("#gh-ac"));
         inputField.sendKeys("Mavic mini");
         inputField.submit();
-//        Thread.sleep(3000);
-//        List<WebElement> elements=driver.findElements(By.cssSelector("s-item_wrapper"));
-//        System.out.println(elements.size());
     }
 }
